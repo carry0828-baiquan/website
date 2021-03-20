@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
             width: size.width,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/globencer-dL09wmeZGaI-unsplash.jpeg"),
+                image: AssetImage("assets/jong-marshes-79mNMAvSORg-unsplash.jpeg"),
                 fit: BoxFit.cover,
 
               ),

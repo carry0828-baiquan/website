@@ -43,7 +43,7 @@ class CustomAppBar extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Image(
-              image: AssetImage("assets/ddcLogo.png"),
+              image: AssetImage("assets/logo.png"),
               height: size.aspectRatio * 30,
               width: size.aspectRatio * 30,
               alignment: Alignment.topCenter,
