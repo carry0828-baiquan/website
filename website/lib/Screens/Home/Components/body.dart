@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'blurBox.dart';
 import 'package:flutter/material.dart';
-import 'package:website/constant.dart';
+
 
 class Body extends StatelessWidget {
 
@@ -15,17 +15,16 @@ class Body extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: size.height * 0.05,),
+              //SizedBox(height: size.height * 0.05,),
               Container(
                 width: size.width * 0.5,
-                height: size.height * 0.5,
+                height: size.height * 0.35,
                 child: BlurBox(),
                 ),
               ]
         )
         );
   }
-
 }
 
 

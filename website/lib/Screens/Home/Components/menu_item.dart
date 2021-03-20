@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constant.dart';
-import '../../../constant.dart';
-import '../../../constant.dart';
-import '../../../constant.dart';
-import '../../DetailScreen.dart';
+
 
 
 class MenuItem extends StatefulWidget {
@@ -49,6 +46,4 @@ class _MenuItemState extends State<MenuItem> {
       ),
     );
   }
-
-
 }

@@ -11,54 +11,53 @@ class HomeScreen extends StatelessWidget {
     // This size provide us total height and width  of our screen
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: SafeArea(
-        top: true,
-        bottom: true,
-        child: Center(
-          child: Container(
-            height: size.height,
-            // it will take full width
-            width: size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/jong-marshes-79mNMAvSORg-unsplash.jpeg"),
-                fit: BoxFit.cover,
+      body: Center(
+        child: Container(
+          height: size.height,
+          // it will take full width
+          width: size.width,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/jong-marshes-79mNMAvSORg-unsplash.jpeg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
 
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 35.0),
+                child: CustomAppBar(),
               ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                CustomAppBar(),
-                Row(
-                 children: [
-                  Spacer(),
-                   Column(
-                     children: [
-                       Text("扫码下载DAPP"),
-                       Padding(
-                         padding: const EdgeInsets.all(15.0),
-                         child: Container(
-                           width: size.aspectRatio * 150,
-                           height: size.aspectRatio * 150,
-                           child: Image(
-                               image: AssetImage("assets/IMG_3537.jpg"),
-                             fit: BoxFit.contain,
-                             ),
-                         ),
-                       ),
-                     ],
-                   ),
-                 ]),
-                // It will cover 1/3 of free spaces
+              Row(
+               children: [
                 Spacer(),
-                Body(),
-                // Spacer(
-                //   flex: 1,
-                // )
-                // it will cover 2/3 of free spaces
-              ],
-            ),
+                 Column(
+                   children: [
+                     //Text("扫码下载DAPP"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                       child: Container(
+                         width: size.width * 0.250,
+                         height: size.height * 0.250,
+                         child: Image(
+                             image: AssetImage("assets/IMG_3537.jpg"),
+                           fit: BoxFit.contain,
+                           ),
+                       ),
+                     ),
+                   ],
+                 ),
+               ]),
+              // It will cover 1/3 of free spaces
+              //Spacer(flex: 0.2,),
+              Body(),
+              Spacer(
+                flex: 1,
+              )
+              // it will cover 2/3 of free spaces
+            ],
           ),
         ),
       ),
