@@ -50,6 +50,9 @@ class _BlurBoxState extends State<BlurBox> with SingleTickerProviderStateMixin{
                       size: size.height * 0.04,
                     )
           ),
+                  SizedBox(
+                    height: size.height * 0.02,
+                  ),
                   AnimatedOpacity(
                     opacity: show ? 1:0,
                     duration: Duration(milliseconds: 500),
