@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
 
 
-class CustomAppBar extends StatelessWidget {
+class CustomAppBar extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-
     return _buildWider(context);
-    // return LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
-    //   if(constraints.maxWidth > 500) {
-    //     return _buildWider(context);
-    //   } else {
-    //     return _buildNormal(context);
-    //   }
-
   }
 
     Widget _buildWider(BuildContext context){
@@ -40,6 +32,7 @@ class CustomAppBar extends StatelessWidget {
             children: [
               Row(
                 children: <Widget>[
+                  Spacer(),
                   Image(
                     image: AssetImage("assets/logo.png"),
                     height: size.height * 0.04,
@@ -51,6 +44,8 @@ class CustomAppBar extends StatelessWidget {
                     "西安氢子泉品牌运营有限公司",
                     style: TextStyle(fontSize: size.height * 0.02, fontWeight: FontWeight.w400),
                   ),
+                  Spacer()
+
                 ],
               ),
             ],
