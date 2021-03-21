@@ -43,9 +43,12 @@ class _BlurBoxState extends State<BlurBox> with SingleTickerProviderStateMixin{
                         show ? controller.forward() : controller.reverse();
                       });
                     },
-                    icon: AnimatedIcon(icon: AnimatedIcons.menu_home,
-                    progress: controller, color: Colors.white,size: size.height * 0.04,
-          )
+                    icon: AnimatedIcon(
+                      icon: AnimatedIcons.menu_home,
+                      progress: controller,
+                      color: Colors.white,
+                      size: size.height * 0.04,
+                    )
           ),
                   AnimatedOpacity(
                     opacity: show ? 1:0,
@@ -58,12 +61,12 @@ class _BlurBoxState extends State<BlurBox> with SingleTickerProviderStateMixin{
                           Row(
                             children: [
                               Container(
-                                width: size.width * 0.4,
+                                width: size.width * 0.6,
                                 child: ListView(
                                   shrinkWrap: true,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                                       child: Text(
                                         "    随着社会发展和人们生活水平的普遍提高，以及人类生活方式的改变，健康产品的总需求急剧增加。低氘水及衍生品凭借 其独有的功能性，在健康产业以及医疗产业中得到深层次的应用。其中，低氘水被广泛应用于生活消费领域，在这些以水为基本生产要素的行业中，低氘水都发挥了其独特功能性，使低氘产业的前景不可限量。低氘康养生态链项目，集三十年水同位素技术研究，在「卫生水」和「安全水」的基础上提出「健康水」（氘含量≦138ppm 的低氘水）概念，并利用区块链技术和通证经济模型，建造了一个低氘全产业链分布式商业生态。",
                                         style: TextStyle(

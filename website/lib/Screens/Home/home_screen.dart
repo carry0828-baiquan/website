@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 35.0),
+                padding: const EdgeInsets.only(top: 40.0),
                 child: CustomAppBar(),
               ),
               BlurBox(),
@@ -53,9 +53,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-
       ),
-
     );
   }
 }
