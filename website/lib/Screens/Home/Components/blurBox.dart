@@ -16,12 +16,11 @@ class _BlurBoxState extends State<BlurBox> with SingleTickerProviderStateMixin{
       AnimationController controller;
       @override
       void initState() {
-        // TODO: implement initState
         super.initState();
         controller = AnimationController(
             vsync: this,
             duration: Duration(milliseconds: 500),
-            reverseDuration: Duration(milliseconds: 500)
+            reverseDuration: Duration(milliseconds: 300)
         );
       }
 
