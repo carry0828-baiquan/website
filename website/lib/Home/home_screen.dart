@@ -5,6 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:website/Components/app_bar.dart';
 import 'package:website/model/logic.dart';
 
+import '../Components/app_bar.dart';
+import '../model/logic.dart';
+import '../model/logic.dart';
+
 class homeScreen extends StatefulWidget {
   @override
   _homeScreenState createState() => _homeScreenState();
@@ -57,7 +61,7 @@ class _homeScreenState extends State<homeScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
-                  child: CustomAppBar(),
+                  child: topBarList[_selectedIndex],
                 ),
                 Spacer(),
                 middleWidgetsList.elementAt(_selectedIndex),

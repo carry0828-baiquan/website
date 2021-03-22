@@ -8,6 +8,7 @@ class silverAppBar extends StatefulWidget {
 class _silverAppBarState extends State<silverAppBar> {
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(slivers: []);
+    return Container(
+    );
   }
 }
