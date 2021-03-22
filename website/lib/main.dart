@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:website/Screens/Home/home_screen.dart';
+import 'package:website/Home/home_screen.dart';
 import 'package:website/constant.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp((MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: homeScreen(),
     );
   }
 }
