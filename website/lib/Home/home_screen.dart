@@ -46,7 +46,7 @@ class _homeScreenState extends State<homeScreen> {
             height: size.height,
             // it will take full width
             width: size.width,
-            decoration: BoxDecorations[_selectedIndex],
+            decoration: AppBars[_selectedIndex],
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

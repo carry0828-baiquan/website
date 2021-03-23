@@ -4,8 +4,8 @@ import 'package:website/Components/blurBox.dart';
 import 'package:website/Components/silverAppbar.dart';
 import 'package:website/Screens/product.dart';
 import 'package:website/Screens/winWin.dart';
+import 'package:website/styles/TileStyle.dart';
 import 'package:website/styles/appBarStyle.dart';
-import 'package:website/styles/listTileStyle.dart';
 
 import '../Components/app_bar.dart';
 
@@ -24,4 +24,8 @@ var listTiles = [
   )
 ];
 
-var BoxDecorations = [buildBoxDecoration()];
+var AppBars = [
+  buildBoxDecoration(),
+  buildBoxDecoration(),
+  buildBoxDecoration()
+];
