@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "/Users/shenbaiquan/IdeaProjects/website/website/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

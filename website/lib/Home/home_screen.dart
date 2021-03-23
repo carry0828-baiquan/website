@@ -2,11 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:website/Components/app_bar.dart';
 import 'package:website/model/logic.dart';
 
-import '../Components/app_bar.dart';
-import '../model/logic.dart';
 import '../model/logic.dart';
 
 class homeScreen extends StatefulWidget {
@@ -49,13 +46,7 @@ class _homeScreenState extends State<homeScreen> {
             height: size.height,
             // it will take full width
             width: size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image:
-                    AssetImage("assets/jong-marshes-79mNMAvSORg-unsplash.jpeg"),
-                fit: BoxFit.cover,
-              ),
-            ),
+            decoration: BoxDecorations[_selectedIndex],
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

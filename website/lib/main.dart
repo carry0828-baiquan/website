@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website/Home/home_screen.dart';
-import 'package:website/constant.dart';
+import 'package:website/styles/constant.dart';
 
 void main() {
   runApp((MyApp()));
@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: kPrimaryColor,
-
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.

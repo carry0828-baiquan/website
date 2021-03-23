@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:website/constant.dart';
+import 'package:website/styles/constant.dart';
 
 class MenuItem extends StatefulWidget {
   final String title;

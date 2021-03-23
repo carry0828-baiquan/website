@@ -14,9 +14,10 @@ class _BlurBoxState extends State<BlurBox> with TickerProviderStateMixin {
 
   initState() {
     super.initState();
-    _controller = AnimationController(
-        duration: const Duration(seconds: 2), vsync: this);
-    _animation = CurvedAnimation(parent: _controller, curve: Curves.fastLinearToSlowEaseIn);
+    _controller =
+        AnimationController(duration: const Duration(seconds: 1), vsync: this);
+    _animation = CurvedAnimation(
+        parent: _controller, curve: Curves.fastLinearToSlowEaseIn);
     _controller.forward();
   }
 
@@ -24,7 +25,6 @@ class _BlurBoxState extends State<BlurBox> with TickerProviderStateMixin {
   dispose() {
     _controller.dispose();
     super.dispose();
-
   }
 
   @override
@@ -88,7 +88,8 @@ class _BlurBoxState extends State<BlurBox> with TickerProviderStateMixin {
                                       width: size.width * 0.20,
                                       height: size.height * 0.20,
                                       child: Image(
-                                        image: AssetImage("assets/IMG_3537.jpg"),
+                                        image:
+                                            AssetImage("assets/IMG_3537.jpg"),
                                         fit: BoxFit.contain,
                                       ),
                                     ),

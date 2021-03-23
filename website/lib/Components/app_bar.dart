@@ -8,41 +8,49 @@ class CustomAppBar extends StatelessWidget {
 
   Widget _buildWider(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      margin: EdgeInsets.all(size.height * 0.01),
-      padding: EdgeInsets.all(size.height * 0.01),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(0, -2),
-            blurRadius: 30,
-            color: Colors.black54.withOpacity(0.4),
+    return Row(
+      children: [
+        Spacer(),
+        Container(
+          margin: EdgeInsets.all(size.height * 0.01),
+          padding: EdgeInsets.all(size.height * 0.01),
+          width: size.width * 0.5,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(25),
+            boxShadow: [
+              BoxShadow(
+                offset: Offset(0, -2),
+                blurRadius: 30,
+                color: Colors.black54.withOpacity(0.4),
+              ),
+            ],
           ),
-        ],
-      ),
-      child: Container(
-        //width: size.width,
-        child: Row(
-          children: <Widget>[
-            Spacer(),
-            Image(
-              image: AssetImage("assets/logo.png"),
-              height: size.height * 0.04,
-              // width: size.aspectRatio * 100,
-              alignment: Alignment.topCenter,
+          child: Container(
+            //width: size.width,
+            child: Row(
+              children: <Widget>[
+                Spacer(),
+                Image(
+                  image: AssetImage("assets/logo.png"),
+                  height: size.height * 0.04,
+                  // width: size.aspectRatio * 100,
+                  alignment: Alignment.topCenter,
+                ),
+                SizedBox(width: size.width * 0.01),
+                Text(
+                  "氢子泉",
+                  style: TextStyle(
+                      fontSize: size.height * 0.02,
+                      fontWeight: FontWeight.w400),
+                ),
+                Spacer()
+              ],
             ),
-            SizedBox(width: size.width * 0.01),
-            Text(
-              "氢子泉",
-              style: TextStyle(
-                  fontSize: size.height * 0.02, fontWeight: FontWeight.w400),
-            ),
-            Spacer()
-          ],
+          ),
         ),
-      ),
+        Spacer()
+      ],
     );
   }
 }
