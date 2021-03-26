@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:website/model/logic.dart';
 
 import '../model/logic.dart';
+import '../styles/appBarStyle.dart';
 
 class homeScreen extends StatefulWidget {
   @override
@@ -24,7 +25,7 @@ class _homeScreenState extends State<homeScreen> {
     BottomNavigationBarItem(
         icon: Icon(Icons.lightbulb_outline),
         label: "合作",
-        backgroundColor: Colors.amber),
+        backgroundColor: Colors.blue),
   ];
 
   int _selectedIndex = 0;
@@ -46,7 +47,7 @@ class _homeScreenState extends State<homeScreen> {
             height: size.height,
             // it will take full width
             width: size.width,
-            decoration: AppBars[_selectedIndex],
+            decoration: buildBoxDecoration(_selectedIndex),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

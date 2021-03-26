@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   custom_navigation_bar: ^0.3.0
@@ -26,6 +26,7 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^0.4.0+9
+  url_launcher: ^6.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -53,7 +54,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
     assets:
-      - assets/
+      - images/BackGroundImageForTab1.jpeg
+      - images/BackgroundImageTab2.jpeg
+      - images/BackgroundImageTab3.jpeg
+      - images/logo.png
+      - images/QRCode.jpg
+      - images/备案图标.png
+      - images/ImageForTab3.jpeg
 
 
 

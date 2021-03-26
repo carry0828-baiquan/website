@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-BoxDecoration buildBoxDecoration() {
+import '../model/logic.dart';
+
+BoxDecoration buildBoxDecoration(index) {
   return BoxDecoration(
     image: DecorationImage(
-      image: AssetImage("BackGroundImageForTab1.jpeg"),
+      image: BackgroundImages[index],
       fit: BoxFit.cover,
     ),
   );

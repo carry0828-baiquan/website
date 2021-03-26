@@ -20,14 +20,17 @@ class TileStyle extends StatelessWidget {
           ),
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-            child: ListTile(
-              leading: icon,
-              title: Text(title),
-              subtitle: Text(
-                subTitle,
-                style: TextStyle(color: Colors.white),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: ListTile(
+                leading: icon,
+                title: Text(title, style: TextStyle(color: Colors.white),),
+                subtitle: Text(
+                  subTitle,
+                  style: TextStyle(color: Colors.white),
+                ),
+                //tileColor: Colors.white,
               ),
-              //tileColor: Colors.white,
             ),
           ),
         ),

@@ -35,20 +35,14 @@ class _productState extends State<product> with TickerProviderStateMixin {
     Size size = MediaQuery.of(context).size;
     return Container(
       height: size.height * 0.8,
-      child: ScaleTransition(
-        scale: _animation,
-        child: ListWheelScrollView(
-            itemExtent: 125,
-            children: listTiles,
-            diameterRatio: 2,
-            offAxisFraction: -0.5,
-            squeeze: 0.8,
-            onSelectedItemChanged: (index) => {
-                  setState(() => {
-                        ListTileSelectedIndex = index,
-                      })
-                }),
-      ),
+      child: ListWheelScrollView(
+          itemExtent: 125,
+          children: listTiles,
+          diameterRatio: 2,
+          offAxisFraction: -0.5,
+          squeeze: 0.8,
+          physics: FixedExtentScrollPhysics(),
+              ),
     );
   }
 }

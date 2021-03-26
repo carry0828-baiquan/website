@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
+  final String title;
+  const CustomAppBar(this.title);
   @override
   Widget build(BuildContext context) {
     return _buildWider(context);
@@ -32,14 +34,14 @@ class CustomAppBar extends StatelessWidget {
               children: <Widget>[
                 Spacer(),
                 Image(
-                  image: AssetImage("assets/logo.png"),
+                  image: AssetImage("images/logo.png"),
                   height: size.height * 0.04,
                   // width: size.aspectRatio * 100,
                   alignment: Alignment.topCenter,
                 ),
                 SizedBox(width: size.width * 0.01),
                 Text(
-                  "氢子泉",
+                  title,
                   style: TextStyle(
                       fontSize: size.height * 0.02,
                       fontWeight: FontWeight.w400),
