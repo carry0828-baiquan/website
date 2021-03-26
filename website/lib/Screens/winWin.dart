@@ -32,7 +32,7 @@ class _winwinState extends State<winwin> {
               ListView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: ListTile(
                       leading: Icon(Icons.precision_manufacturing_outlined, color: Colors.white, size: 24,),
                       title: Text('技术节点', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -40,7 +40,7 @@ class _winwinState extends State<winwin> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: ListTile(
                       leading: Icon(Icons.copyright, color: Colors.white, size: 24,),
                       title: Text('版权所有', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -49,7 +49,7 @@ class _winwinState extends State<winwin> {
                   ),
 
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: ListTile(
                       leading: Icon(Icons.phone, color: Colors.white, size: 24,),
                       title: Text('联系电话', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -57,7 +57,7 @@ class _winwinState extends State<winwin> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: ListTile(
                       leading: Icon(Icons.mail, color: Colors.white, size: 24,),
                       title: Text('邮箱', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -65,11 +65,11 @@ class _winwinState extends State<winwin> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: ListTile(
                       leading: Icon(Icons.location_city, color: Colors.white, size: 24,),
                       title: Text('地址', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                      subtitle: Text('陕西省西安市雁塔区丈八一路1号汇鑫IBC-A座', style: TextStyle(color: Colors.white),),
+                      subtitle: SelectableText('陕西省西安市雁塔区丈八一路1号汇鑫IBC-A座', style: TextStyle(color: Colors.white),),
                     ),
                   ),
 

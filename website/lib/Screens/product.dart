@@ -34,7 +34,7 @@ class _productState extends State<product> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height * 0.8,
+      height: size.height * 0.75,
       child: ListWheelScrollView(
           itemExtent: 125,
           children: listTiles,
