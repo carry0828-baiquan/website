@@ -1,7 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:website/Components/app_bar.dart';
 import 'package:website/model/logic.dart';
+import 'package:website/styles/appBarStyle.dart';
 
 import '../model/logic.dart';
 
@@ -11,38 +13,42 @@ class product extends StatefulWidget {
 }
 
 class _productState extends State<product> with TickerProviderStateMixin {
-  AnimationController _controller;
-  Animation<double> _animation;
 
-  initState() {
-    super.initState();
-    _controller =
-        AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    _animation =
-        CurvedAnimation(parent: _controller, curve: Curves.easeInOutCubic);
-    _controller.forward();
-  }
-
-  @override
-  dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  int ListTileSelectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      height: size.height * 0.75,
-      child: ListWheelScrollView(
-          itemExtent: 125,
-          children: listTiles,
-          diameterRatio: 2,
-          offAxisFraction: -0.5,
-          squeeze: 0.8,
-          physics: FixedExtentScrollPhysics(),
-              ),
-    );
+    return Scaffold(
+        resizeToAvoidBottomInset: false,
+        appBar: AppBar(title: Text("产品"),),
+        body: Center(
+        child: Container(
+        height: size.height,
+        // it will take full width
+        width: size.width,
+        decoration: buildBoxDecoration(1),
+    child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+    Padding(
+    padding: const EdgeInsets.only(top: 40.0),
+    child: CustomAppBar('主要功效'),
+    ),
+    Spacer(),
+          Container(
+            height: size.height * 0.75,
+            child: ListWheelScrollView(
+              itemExtent: 125,
+              children: listTiles,
+              diameterRatio: 2,
+              offAxisFraction: -0.5,
+              squeeze: 0.8,
+              physics: FixedExtentScrollPhysics(),
+            ),
+          ),
+    Spacer(),
+    ],
+    ),
+    ),
+    ));
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:website/Components/app_bar.dart';
 import 'package:website/Components/blurBox.dart';
-import 'package:website/Components/silverAppbar.dart';
 import 'package:website/Screens/product.dart';
 import 'package:website/Screens/winWin.dart';
+import 'package:website/styles/DrawerListTiles.dart';
 import 'package:website/styles/TileStyle.dart';
 import 'package:website/styles/appBarStyle.dart';
 
@@ -44,6 +44,8 @@ var listTiles = [
   )
 ];
 
-
+var DrawerTiles = [
+  DrawerListTiles(title: ("barry"),subTitle: "sadsd",)
+];
 var BackgroundImages = [AssetImage('images/BackGroundImageForTab1.jpeg'),
   AssetImage('images/BackgroundImageTab2.jpeg'), AssetImage('images/ImageForTab3.jpeg')];
