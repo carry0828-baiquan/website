@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website/Home/home_screen.dart';
+import 'package:website/Screens/productDetail.dart';
 import 'package:website/styles/constant.dart';
 
 void main() {

@@ -21,7 +21,8 @@ class _winwinState extends State<winwin> {
     return
       Scaffold(
         resizeToAvoidBottomInset: false,
-        appBar: AppBar(title: Text("合作"),),
+        appBar: AppBar(backgroundColor: Colors.transparent, elevation: 0,iconTheme: IconThemeData(color: Colors.white)),
+        extendBodyBehindAppBar: true,
         body: Center(
         child: Container(
         height: size.height,

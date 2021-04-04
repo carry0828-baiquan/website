@@ -24,16 +24,13 @@ class DrawerListTiles extends StatelessWidget {
             ),
             child: ListTile(
               leading: icon,
-              title: Text(title),
-              subtitle: Text(
-                subTitle,
-              ),
+              title: Text(title, style: TextStyle(color: Colors.white),),
+              enabled: true,
               onTap: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => page),
                 );
-                Navigator.pop(context);
               },
               selectedTileColor: Colors.lightBlue,
               //tileColor: Colors.white,

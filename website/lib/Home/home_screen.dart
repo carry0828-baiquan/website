@@ -16,28 +16,6 @@ class homeScreen extends StatefulWidget {
 }
 
 class _homeScreenState extends State<homeScreen> {
-  /*var items = const <BottomNavigationBarItem>[
-    BottomNavigationBarItem(
-        icon: Icon(Icons.home),
-        backgroundColor: Colors.lightBlueAccent,
-        label: "首页"),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.local_drink),
-        label: "产品",
-        backgroundColor: Colors.cyan),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.lightbulb_outline),
-        label: "合作",
-        backgroundColor: Colors.blue),
-  ];
-
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -45,35 +23,66 @@ class _homeScreenState extends State<homeScreen> {
     // This size provide us total height and width  of our screen
     return Scaffold(
         resizeToAvoidBottomInset: false,
-        appBar: AppBar(title: Text("氢子泉"), backgroundColor: Colors.blue,),
+        appBar: AppBar(backgroundColor: Colors.transparent,elevation: 0,iconTheme: IconThemeData(color: Colors.white),),
+        extendBodyBehindAppBar: true,
         drawer: Drawer(
           child: Container(
            decoration: BoxDecoration(
              image: DecorationImage(
-               image: AssetImage("images/BackGroundImageForTab1.jpeg"),
+               image: AssetImage("images/drawerBackground.jpg"),
                    fit: BoxFit.cover,
              )
            ),
             child: ListView(
               children: [
-                DrawerHeader(
-                  decoration: BoxDecoration(
-                    color: Colors.white12
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      CircleAvatar(radius: 40, backgroundImage: AssetImage("images/boss.jpeg"),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    clipBehavior: Clip.hardEdge,
+                    child: DrawerHeader(
+                      decoration: BoxDecoration(
+                        color: Colors.white12
                       ),
-                      Spacer(),
-                      Text("韩刚\n低氘康养生态链创始人\n西安氢子泉生物工程有限公司总经理\n西安汉术化学工程股份有限公司董事长",
-                      style: TextStyle(color: Colors.white, fontSize: 11),textAlign: TextAlign.start,
-                      )
-                    ],
+                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                        child: Row(
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(radius: 35, backgroundImage: AssetImage("images/boss.jpg"),
+                                ),
+                              ],
+                            ),
+                            Spacer(),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("韩刚", style: TextStyle(fontWeight: FontWeight.bold),textAlign: TextAlign.start,),
+                                Text("低氘康养生态链创始人\n西安氢子泉生物工程有限公司总经理\n西安汉术化学工程股份有限公司董事长",
+                                  style: TextStyle(color: Colors.black, fontSize: 11),textAlign: TextAlign.start,
+                                )],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ),
                 ),
-                DrawerTiles[0]
+
+                DrawerTiles[0],
+                SizedBox(height: 20,),
+                DrawerTiles[1],
+                SizedBox(height: 20,),
+                DrawerTiles[2],
+                SizedBox(height: 20,),
+                DrawerTiles[3],
+                SizedBox(height: 20,),
+                DrawerTiles[4],
+                SizedBox(height: 20,),
               ],
             ),
           ),
@@ -89,7 +98,7 @@ class _homeScreenState extends State<homeScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
-                  child: CustomAppBar(""),
+                  child: CustomAppBar("氢子泉"),
                 ),
                 Spacer(),
                 BlurBox(),
@@ -98,14 +107,6 @@ class _homeScreenState extends State<homeScreen> {
             ),
           ),
         ),
-        /*bottomNavigationBar: BottomNavigationBar(
-          items: items,
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.white,
-          backgroundColor: items[_selectedIndex].backgroundColor,
-          onTap: _onItemTapped,
-          //elevation: 15,
-        )*/
     );
   }
 }

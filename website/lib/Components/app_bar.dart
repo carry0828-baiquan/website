@@ -43,7 +43,6 @@ class CustomAppBar extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
-                      fontSize: size.height * 0.02,
                       fontWeight: FontWeight.w400),
                 ),
                 Spacer()

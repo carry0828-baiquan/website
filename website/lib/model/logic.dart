@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:website/Components/app_bar.dart';
 import 'package:website/Components/blurBox.dart';
+import 'package:website/Screens/chain.dart';
 import 'package:website/Screens/product.dart';
+import 'package:website/Screens/productDetail.dart';
 import 'package:website/Screens/winWin.dart';
 import 'package:website/styles/DrawerListTiles.dart';
 import 'package:website/styles/TileStyle.dart';
 import 'package:website/styles/appBarStyle.dart';
+import 'package:website/Home/home_screen.dart';
 
 import '../Components/app_bar.dart';
 
@@ -45,7 +48,23 @@ var listTiles = [
 ];
 
 var DrawerTiles = [
-  DrawerListTiles(title: ("barry"),subTitle: "sadsd",)
+  DrawerListTiles(icon: Icon(Icons.home, color: Colors.white,), title: ("首页"), page: homeScreen(),),
+  DrawerListTiles(icon: Icon(Icons.local_drink, color: Colors.white,), title: "低氘水功效", page: product(),),
+  DrawerListTiles(icon: Icon(Icons.image, color: Colors.white,),title: "产品展示",page: productDetail(),),
+  DrawerListTiles(icon: Icon(Icons.linear_scale,color: Colors.white,),title: "低氘康养生态链", page: chain(),),
+  DrawerListTiles(icon: Icon(Icons.lightbulb_outline, color: Colors.white,),title: "加入我们",page: winwin(),)
 ];
-var BackgroundImages = [AssetImage('images/BackGroundImageForTab1.jpeg'),
-  AssetImage('images/BackgroundImageTab2.jpeg'), AssetImage('images/ImageForTab3.jpeg')];
+var BackgroundImages = [
+  AssetImage('images/BackGroundImageForTab1.jpeg'),
+  AssetImage('images/BackgroundImageTab2.jpeg'),
+  AssetImage('images/ImageForTab3.jpeg'),
+
+];
+
+var productImages = [
+  AssetImage("images/喷雾1.jpeg"),
+  AssetImage("images/喷雾2.jpeg"),
+  AssetImage("images/喷雾3.jpeg"),
+  AssetImage("images/喷雾4.jpeg"),
+  AssetImage("images/喷雾5.jpeg"),
+];
