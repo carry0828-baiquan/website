@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:website/Components/app_bar.dart';
 import 'package:website/model/logic.dart';
-import 'package:website/styles/appBarStyle.dart';
+import 'package:website/styles/buildBoxDecroation.dart';
 
 import '../model/logic.dart';
 

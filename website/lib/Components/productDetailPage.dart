@@ -4,13 +4,14 @@ import 'package:website/model/logic.dart';
 
 class productDetailImage extends StatelessWidget {
   final int index;
-  const productDetailImage(this.index);
+  final List imageList;
+  const productDetailImage(this.index, this.imageList);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(iconTheme: IconThemeData(color: Colors.black),elevation: 0, backgroundColor: Colors.transparent,),
+      appBar: AppBar(iconTheme: IconThemeData(color: Colors.white),elevation: 0, backgroundColor: Colors.black,),
       body: PhotoView(
-        imageProvider: productImages[index],
+        imageProvider: imageList[index],
       ),
     );
   }

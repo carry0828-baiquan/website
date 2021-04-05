@@ -7,7 +7,7 @@ import 'package:website/Screens/productDetail.dart';
 import 'package:website/Screens/winWin.dart';
 import 'package:website/styles/DrawerListTiles.dart';
 import 'package:website/styles/TileStyle.dart';
-import 'package:website/styles/appBarStyle.dart';
+import 'package:website/styles/buildBoxDecroation.dart';
 import 'package:website/Home/home_screen.dart';
 
 import '../Components/app_bar.dart';
@@ -58,13 +58,32 @@ var BackgroundImages = [
   AssetImage('images/BackGroundImageForTab1.jpeg'),
   AssetImage('images/BackgroundImageTab2.jpeg'),
   AssetImage('images/ImageForTab3.jpeg'),
+  AssetImage("images/productDetailBackgroundImage.jpg")
 
 ];
 
-var productImages = [
-  AssetImage("images/喷雾1.jpeg"),
-  AssetImage("images/喷雾2.jpeg"),
-  AssetImage("images/喷雾3.jpeg"),
-  AssetImage("images/喷雾4.jpeg"),
-  AssetImage("images/喷雾5.jpeg"),
+var penwuImages = [
+  AssetImage("images/喷雾/喷雾1.jpeg"),
+  AssetImage("images/喷雾/喷雾2.jpeg"),
+  AssetImage("images/喷雾/喷雾3.jpeg"),
+  AssetImage("images/喷雾/喷雾4.jpeg"),
+  AssetImage("images/喷雾/喷雾5.jpeg"),
+];
+
+var xiaopingImages = [
+  AssetImage("images/小瓶/小瓶1.jpeg"),
+  AssetImage("images/小瓶/小瓶2.jpeg"),
+  AssetImage("images/小瓶/小瓶3.jpeg"),
+  AssetImage("images/小瓶/小瓶4.jpeg"),
+  AssetImage("images/小瓶/小瓶5.jpeg"),
+  AssetImage("images/小瓶/小瓶6.jpeg")
+];
+
+var tongzhuangImages = [
+  AssetImage("images/桶装/桶装1.jpeg"),
+  AssetImage("images/桶装/桶装2.jpeg"),
+  AssetImage("images/桶装/桶装3.jpeg"),
+  AssetImage("images/桶装/桶装4.jpeg"),
+  AssetImage("images/桶装/桶装5.jpeg"),
+  AssetImage("images/桶装/桶装6.jpeg"),
 ];

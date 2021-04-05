@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:website/Components/app_bar.dart';
-import 'package:website/styles/appBarStyle.dart';
+import 'package:website/styles/buildBoxDecroation.dart';
 
 const _urlGongWang = 'http://www.beian.gov.cn/';
 const _ICP = 'https://beian.miit.gov.cn/#/Integrated/index';

@@ -58,17 +58,31 @@ flutter:
       - images/BackGroundImageForTab1.jpeg
       - images/BackgroundImageTab2.jpeg
       - images/BackgroundImageTab3.jpeg
+      - images/productDetailBackgroundImage.jpg
       - images/logo.png
       - images/QRCode.jpg
       - images/备案图标.png
       - images/ImageForTab3.jpeg
       - images/boss.jpg
       - images/drawerBackground.jpg
-      - images/喷雾1.jpeg
-      - images/喷雾2.jpeg
-      - images/喷雾3.jpeg
-      - images/喷雾4.jpeg
-      - images/喷雾5.jpeg
+      - images/喷雾/喷雾1.jpeg
+      - images/喷雾/喷雾2.jpeg
+      - images/喷雾/喷雾3.jpeg
+      - images/喷雾/喷雾4.jpeg
+      - images/喷雾/喷雾5.jpeg
+      - images/小瓶/小瓶1.jpeg
+      - images/小瓶/小瓶2.jpeg
+      - images/小瓶/小瓶3.jpeg
+      - images/小瓶/小瓶4.jpeg
+      - images/小瓶/小瓶5.jpeg
+      - images/小瓶/小瓶6.jpeg
+      - images/桶装/桶装1.jpeg
+      - images/桶装/桶装2.jpeg
+      - images/桶装/桶装3.jpeg
+      - images/桶装/桶装4.jpeg
+      - images/桶装/桶装5.jpeg
+      - images/桶装/桶装6.jpeg
+
 
 
 
