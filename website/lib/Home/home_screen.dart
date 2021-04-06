@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:website/Components/WhitePaperDownloadButton.dart';
 import 'package:website/Components/app_bar.dart';
 import 'package:website/Components/blurBox.dart';
 import 'package:website/model/logic.dart';
@@ -79,8 +80,8 @@ class _homeScreenState extends State<homeScreen> {
                 SizedBox(height: 20,),
                 DrawerTiles[2],
                 SizedBox(height: 20,),
-                DrawerTiles[3],
-                SizedBox(height: 20,),
+                // DrawerTiles[3],
+                // SizedBox(height: 20,),
                 DrawerTiles[4],
                 SizedBox(height: 20,),
               ],
@@ -100,6 +101,8 @@ class _homeScreenState extends State<homeScreen> {
                   padding: const EdgeInsets.only(top: 40.0),
                   child: CustomAppBar("氢子泉"),
                 ),
+                Spacer(),
+                Center(child: WhitePaperDownloadButton("下载商业白皮书")),
                 Spacer(),
                 BlurBox(),
                 Spacer(),

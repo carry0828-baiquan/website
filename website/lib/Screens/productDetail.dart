@@ -31,7 +31,7 @@ class _productDetailState extends State<productDetail> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomAppBar("产品展示"),
-                    productDetailBartitle("氢子泉爽肤喷雾（20ml*6支/盒)"),
+                    productDetailBartitle("氢子泉爽肤喷雾"),
                     SizedBox(height: 10,),
                     Container(
                       height: 200,
